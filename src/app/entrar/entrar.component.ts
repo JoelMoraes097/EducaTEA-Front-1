@@ -13,6 +13,7 @@ export class EntrarComponent implements OnInit {
 
   userLogin: UserLogin = new UserLogin
 
+  
   constructor(
     private auth: AuthService,
     private router: Router
