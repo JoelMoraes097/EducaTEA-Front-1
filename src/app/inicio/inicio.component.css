@@ -1,10 +1,15 @@
-.fs-54{
-    font-size: 54pt;
-}
-.fs-18{
-    font-size: 18pt;
-}
-
-.bg-cor-inicio{
-    background-color: rgb(128, 240, 206);
-}
+.carousel-item {
+    margin-top: 15px;
+    height: 75vh;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+    .color{
+        background-color: rgb(240, 173, 86);
+    }
+    .color:hover{
+        background-color: #9743db;
+    }
