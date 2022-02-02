@@ -9,6 +9,7 @@ import { AuthService } from '../service/auth.service';
 import { PostagemService } from '../service/postagem.service';
 import { TemaService } from '../service/tema.service';
 
+
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
