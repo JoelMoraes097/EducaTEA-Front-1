@@ -1,3 +1,23 @@
 .bg-cor-tema {
-    background-color: rgb(128, 240, 206);
+    background-color: rgb(255, 255, 255);
+}
+
+.table-color{
+    background-color: rgb(0, 0, 0);
+}
+
+.btn-color1{
+    background-color: #6E00C8;
+}
+
+.btn-color2{
+    background-color: #faac45;
+}
+
+.bg-image{
+    background-image: url("../../assets/img/puzzlepiece.svg");
+    opacity: 0.8;
+}
+.text-black{
+    color: black;
 }
