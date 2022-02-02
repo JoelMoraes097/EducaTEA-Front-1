@@ -7,9 +7,17 @@
     -o-background-size: cover;
     background-size: cover;
   }
-    .color{
-        background-color: rgb(240, 173, 86);
+    
+    .btn {
+        box-shadow: none;
+        width: 30%;
+        height: 40px;
+        background-color: #faac45;
+        color: rgb(255, 255, 255);
+        border-radius: 25px;
+        letter-spacing: 1.3px
     }
-    .color:hover{
-        background-color: #9743db;
+   
+    .btn:hover {
+        background-color: #6E00C8
     }
