@@ -40,18 +40,23 @@
 
 
 <div class="container mb-5 mt-5" id="postagens">
+  <div class="row">           
+    <div class="col-md-12 d-flex justify-content-center mt-3 mb-5">
+      <button class="btn color mr-5" data-toggle="modal" data-target="#novaPostagem">Conte sua História</button>  
+    </div>
+  </div>
   <nav>
     <div class="nav nav-tabs d-flex justify-content-center mb-5 mt-5" id="nav-tab" role="tablist">
 
-      <a class="nav-item nav-link active text-dark font-weight-bold" id="nav-todasPostagens-tab" data-toggle="tab"
+      <a class="nav-item nav-link active text-white font-weight-bold" id="nav-todasPostagens-tab" data-toggle="tab"
         href="#todasPostagens" role="tab" aria-controls="nav-todasPostagens" aria-selected="true">Todas as Postagens</a>
 
-      <a (click)='findByIdUser()' class="nav-item nav-link text-dark font-weight-bold" id="nav-minhasPostagens-tab"
+      <a (click)='findByIdUser()' class="nav-item nav-link text-white font-weight-bold" id="nav-minhasPostagens-tab"
         data-toggle="tab" href="#minhasPostagens" role="tab" aria-controls="nav-minhasPostagens"
         aria-selected="false">Minhas
         Postagens</a>
 
-      <a class="nav-item nav-link text-dark font-weight-bold" id="nav-postagemTema-tab" data-toggle="tab"
+      <a class="nav-item nav-link text-white font-weight-bold" id="nav-postagemTema-tab" data-toggle="tab"
         href="#postagemTema" role="tab" aria-controls="nav-postagemTema" aria-selected="false">Postagens por Tema</a>
 
     </div>
@@ -161,9 +166,5 @@
   </div>
 </div>
 
-<div class="row">           
-  <div class="col-md-12 d-flex justify-content-center mt-3 mb-5">
-    <button class="btn color mr-5" data-toggle="modal" data-target="#novaPostagem">Conte sua História</button>  
-  </div>
-</div>
+
 
