@@ -1,13 +1,14 @@
-.fs-16 
-{
-font-size: 16pt;
+.fs-16{
+    font-size: 16pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-a 
-{
+a {
     cursor: pointer;
 }
-
 .bg-cor-menu{
-    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(to bottom right,#6a41bd, #bd5aeb, #a283e9);
+}
+.tm{
+    height: 80px;
 }

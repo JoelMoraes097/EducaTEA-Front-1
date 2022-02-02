@@ -1,0 +1,9 @@
+.color{
+    color: rgb(8, 8, 8);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.bg-image{
+    background-image: url('../../../assets/img/puzzlepiece.svg');
+    background-repeat: repeat-x;
+    opacity: 0.6;
+}
