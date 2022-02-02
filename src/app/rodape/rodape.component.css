@@ -1,39 +1,69 @@
 
-ul.social-network
-{
- list-style: none;
- padding: 0;
+
+.icon{
+    color: blueviolet;
 }
 
-ul.social-network li
-{
-  display: inline;
-  margin: 0;
-  padding: 5px;
-}
-
-.fa 
-{
-    font-size: 35pt;
-    color: white;
-    padding: 10px;
-}
-
-.fa-facebook-square:hover 
-{
-    color: #3b5998;
-}
-
-.fa-instagram:hover
-{
-    color: #C13584;
-}
-
-.fa-linkedin-square:hover 
-{
- color: #0072b1;
-}
-
-.bg-cor{
-    background-color: #8C52FF;
-}
+.footer-basic {
+    padding:40px 0;
+    background-color:#8C52FF;
+    color:#d87d15;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:white ;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    color: black;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+    padding-top: 15px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid rgb(255, 255, 255);
+    margin:0 8px;
+    background-color:rgb(255, 255, 255);
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    background-color:#ff9100;
+    opacity: 100%;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:25px;
+    text-align:center;
+    font-size:13px;
+    color:rgb(255, 255, 255);
+    margin-bottom:0;
+  }
+  
+  
