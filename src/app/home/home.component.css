@@ -62,9 +62,11 @@
 
 /* Dados Informativos - Gráficos */
 
+
+
 .skills-full{
     padding: 1%;
-    background-color:#6E00C8;
+    background-image: url('../../assets/img/fotog.svg');
     background-size: cover;
 }
 
@@ -88,7 +90,7 @@
 
 /* Dados sobre o projeto EducaTea*/
 .numbers-full{
-    background-color:#d87d15;
+    background-color:#ff9720;
     
 }
 
@@ -179,6 +181,10 @@ img.card-item{
     text-align: center;
     padding: 10px 15px;
     margin: 70px auto 0;
+}
+.cursop {
+    padding-top: 80px;
+    padding-bottom: 5px;
 }
 
 /* Configurações vídeo e carrossel*/
@@ -372,7 +378,7 @@ body{
 
 .footer-basic {
     padding:40px 0;
-    background-color:#8C52FF;
+    background-color:#ff9720;
     color:#d87d15;
   }
 
