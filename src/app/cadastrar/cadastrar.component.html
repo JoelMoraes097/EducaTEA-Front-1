@@ -4,34 +4,34 @@
     <div class="text-center  name"> Cadastro </div>
     <div class="p-3 ">
         <div class="form-group ">
-            <label class="mt-2 " for="nome">Nome</label>
+            <label class="mt-2 text-white" for="nome">Nome</label>
             <input [(ngModel)]='user.nome' class="p-1 form-control" type="text" name="nome" id="nome"
                 placeholder="Seu nome">
         </div>
         <div class="form-group">
-            <label class="mt-2" for="usuario">Usuário</label>
+            <label class="mt-2 text-white" for="usuario">Usuário</label>
             <input [(ngModel)]='user.usuario' class="p-1 form-control " type="text" name="usuario" id="usuario"
                 placeholder="Seu usuário">
         </div>
         <div class="form-group">
-            <label class="mt-2" for="foto">Link da Foto</label>
+            <label class="mt-2 text-white" for="foto">Link da Foto</label>
             <input [(ngModel)]='user.foto' class="p-1 form-control" type="text" name="foto" id="foto"
                 placeholder="Link da sua foto">
         </div>
         <div class="form-group">
-            <label class="mt-2" for="senha">Senha</label>
+            <label class="mt-2 text-white" for="senha">Senha</label>
             <input (input)='confirmSenha($event)' class="p-1 form-control" type="password" name="senha" id="senha"
                 placeholder="Sua senha">
         </div>
         <div class="form-group">
-            <label class="mt-2" for="confirmaSenha">Confirmar Senha</label>
+            <label class="mt-2 text-white" for="confirmaSenha">Confirmar Senha</label>
             <input [(ngModel)]='user.senha' class="p-1 form-control" type="password" name="confirmSenha"
                 id="confirmSenha" placeholder="Confirme sua senha">
         </div>
         <div class="form-group">
-            <label class="mt-2" for="tipo">Tipo de Usuário</label>
+            <label class="mt-2 text-white" for="tipo">Tipo de Usuário</label>
             <select class="p-1 form-control" name="tipo" id="tipo" (change)='tipoUser($event)'>
-                <option value="normal">Escolha um usuario</option>
+                <option value="normal">Escolha  usuario</option>
                 <option value="normal">Normal</option>
                 <option value="administrador">Administrador</option>
             </select>
