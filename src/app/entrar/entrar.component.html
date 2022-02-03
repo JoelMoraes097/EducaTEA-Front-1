@@ -14,11 +14,15 @@
             <input [(ngModel)]='userLogin.senha' class="p-1 form-control" type="password" name="senha" id="senha"
                 placeholder="Sua senha">
         </div>
-        <div class="d-flex justify-content-center p-3">
+        <div class="d-flex justify-content-center pt-4">
             <button type="submit" class="btn" (click)='entrar()'>Entrar</button>
+       
         </div>
+        <div class="d-flex justify-content-center pt-3">
+        <button type="submit" class="btn" routerLink='/home'>Voltar</button>
+    </div>
     </form>
-    <p class="text-center text-white">
+    <p class="text-center text-white pt-2">
         Não tem uma conta? <a routerLink='/cadastrar'>Cadastre-se</a>
     </p>
 </div>
