@@ -7,7 +7,7 @@ a {
     cursor: pointer;
 }
 .bg-cor-menu{
-    background-image: linear-gradient(to bottom right,#6a41bd, #bd5aeb, #a283e9);
+    background-color: #ff9100;
 }
 .tm{
     height: 80px;

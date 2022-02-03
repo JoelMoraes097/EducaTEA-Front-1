@@ -1,22 +1,16 @@
 <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h1 class="text-center text-secondary">Atualizar Tema</h1>
+    <div class="wrapper" style="width: 18rem;">
+     <div class="card-body">
+        <div class="logo mb-3"> <img src="https://i.imgur.com/OWlilJM.png" alt="">
         </div>
-    </div>
-
-    <div class="row d-flex justify-content-center">
-        <div class="col-md-6">
-
-            <div class="form-group">
-                <label for="descricao">Descrição</label>
-                <input type="text" class="form-control" id="descricao" [(ngModel)]='tema.descricao'>
-            </div>
-
-            <div class="d-flex justify-content-center">
-                <button class="btn btn-danger mr-4" routerLink='/tema'>Cancelar</button>
-                <button class="btn btn-success" (click)='atualizar()'>Atualizar</button>
-            </div>
+        <h5 class="text-center name">Atualizar Tema</h5>        
+        <h6 class="text-center text-white mt-4 mb-3">Descrição</h6>
+        <div class="form-group">
+          <input type="text" id="descricao" [(ngModel)]='tema.descricao'>
         </div>
-    </div>
+          <div class="d-flex justify-content-center mt-3">
+        <button class="btn mr-4" routerLink='/tema'>Cancelar</button>
+        <button class="btn" (click)='atualizar()'>Atualizar</button>
+        </div>
+      </div>
 </div>
