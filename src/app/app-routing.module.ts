@@ -7,16 +7,18 @@ import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.compon
 import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
 import { UserEditComponent } from './edit/user-edit/user-edit.component';
 import { EntrarComponent } from './entrar/entrar.component';
+import { HomeComponent } from './home/home.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { TemaComponent } from './tema/tema.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'entrar', pathMatch: 'full'},
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path:'entrar', component:EntrarComponent},
   {path:'cadastrar', component:CadastrarComponent},
   
   {path: 'inicio', component:InicioComponent},
   {path: 'tema', component:TemaComponent},
+  {path: 'home', component: HomeComponent},
 
   {path: 'tema-edit/:id', component: TemaEditComponent},
   {path: 'tema-delete/:id', component: TemaDeleteComponent},
@@ -25,6 +27,8 @@ const routes: Routes = [
   {path: 'postagem-delete/:id' , component: PostagemDeleteComponent},
 
   {path: 'user-edit/:id', component : UserEditComponent}
+
+
 
 ];
 
