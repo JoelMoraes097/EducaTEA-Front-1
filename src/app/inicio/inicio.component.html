@@ -1,62 +1,27 @@
-
-
-
-<div class="container-fluid">
-  <div id="carouselExampleIndicators" class="carousel slide my-carousel my-carousel" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-      <div class="carousel-item active" style="background-image: url('../../assets/img/1.svg')">
+<div class="container-fluid margin d-flex align-items-end justify-content-center">
   
-      </div>
-      <div class="carousel-item " style="background-image: url('../../assets/img/2.svg')">
-      </div>
-
-      <div class="carousel-item " style="background-image: url('../../assets/img/3.svg')">
-      </div>
-
-      <div class="carousel-item " style="background-image: url('../../assets/img/4.svg')">
-      </div>
-
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
+  <a class="btn btn-primary btn-lg j-buttom botao p-1 ml-5" href="#" role="button">Saiba mais</a>
+  	
 </div>
-
-
-
-
-
 
 <div class="container mb-5 mt-5" id="postagens">
   <div class="row">           
-    <div class="col-md-12 d-flex justify-content-center mt-3 mb-5">
+    <div class="col-md-12 d-flex justify-content-center mt-2 mb-5">
       <button class="btn color mr-5" data-toggle="modal" data-target="#novaPostagem">Conte sua História</button>  
     </div>
   </div>
   <nav>
-    <div class="nav nav-tabs d-flex justify-content-center mb-5 mt-5" id="nav-tab" role="tablist">
+    <div class="nav nav-tabs d-flex justify-content-center mb-5 mt-3" id="nav-tab" role="tablist">
 
-      <a class="nav-item nav-link active text-white font-weight-bold" id="nav-todasPostagens-tab" data-toggle="tab"
+      <a class="nav-item nav-link active text-white font-weight-bold mr-3" id="nav-todasPostagens-tab" data-toggle="tab"
         href="#todasPostagens" role="tab" aria-controls="nav-todasPostagens" aria-selected="true">Todas as Postagens</a>
 
-      <a (click)='findByIdUser()' class="nav-item nav-link text-white font-weight-bold" id="nav-minhasPostagens-tab"
+      <a (click)='findByIdUser()' class="nav-item nav-link text-white font-weight-bold mr-3" id="nav-minhasPostagens-tab"
         data-toggle="tab" href="#minhasPostagens" role="tab" aria-controls="nav-minhasPostagens"
         aria-selected="false">Minhas
         Postagens</a>
 
-      <a class="nav-item nav-link text-white font-weight-bold" id="nav-postagemTema-tab" data-toggle="tab"
+      <a class="nav-item nav-link text-white font-weight-bold mr-3" id="nav-postagemTema-tab" data-toggle="tab"
         href="#postagemTema" role="tab" aria-controls="nav-postagemTema" aria-selected="false">Postagens por Tema</a>
 
     </div>
@@ -129,27 +94,27 @@
 <div class="modal fade" id="novaPostagem" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
   aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
+    <div class="modal-content back-color">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Nova Postagem</h5>
+        <h5 class="modal-title text-white" id="exampleModalCenterTitle"><b>Nova Postagem</b></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <div class="form-group">
+        <div class="form-group text-white">
           <label for="titulo">Título</label>
           <input [(ngModel)]='postagem.titulo' type="text" class="form-control" id="titulo"
             placeholder="Digite o título">
         </div>
 
-        <div class="form-group">
+        <div class="form-group text-white">
           <label for="texto">Texto</label>
           <textarea [(ngModel)]='postagem.texto' class="form-control" name="texto" id="texto" rows="3"></textarea>
         </div>
 
-        <div class="form-group">
-          <label for="texto">Escolha um tema ou <a data-dismiss="modal" routerLink='/tema'>cadastre um novo</a>:
+        <div class="form-group text-white">
+          <label for="texto">Escolha um tema ou <a class="text-dark" data-dismiss="modal" routerLink='/tema'>cadastre um novo</a>:
           </label>
           <select name="tema" id="tema" class="form-control" [(ngModel)]='idTema' (change)='findByIdTema()'>
             <option *ngFor='let item of listaTemas' value="{{item.id}}">{{item.descricao}}</option>
@@ -159,8 +124,8 @@
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn btn-success" (click)='publicar()'>Publicar</button>  
+        <button type="button" class="btn" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn" (click)='publicar()'>Publicar</button>  
       </div>
     </div>
   </div>
