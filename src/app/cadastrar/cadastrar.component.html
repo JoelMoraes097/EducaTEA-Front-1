@@ -1,7 +1,7 @@
 <!--Cadastrar-->
 <div class="wrapper">
 
-    <div class="text-center  name pt-5"> Cadastro </div>
+    <div class="text-center name pt-2"> Cadastro </div>
     <div class="p-3 ">
         <div class="form-group ">
             <label class="mt-2 text-white" for="nome">Nome</label>
@@ -21,7 +21,7 @@
         <div class="form-group">
             <label class="mt-2 text-white" for="senha">Senha</label>
             <input (input)='confirmSenha($event)' class="p-1 form-control" type="password" name="senha" id="senha"
-                placeholder="Sua senha">
+                placeholder="Sua senha (min 8 carac.)">
         </div>
         <div class="form-group">
             <label class="mt-2 text-white" for="confirmaSenha">Confirmar Senha</label>
@@ -32,13 +32,13 @@
             <label class="mt-2 text-white" for="tipo">Tipo de Usuário</label>
             <select class="p-1 form-control" name="tipo" id="tipo" (change)='tipoUser($event)'>
                 <option value="normal">Escolha  usuario</option>
-                <option value="normal">Normal</option>
+                <option value="normal">Colaborador</option>
                 <option value="administrador">Administrador</option>
             </select>
         </div>
-        <div class="d-flex justify-content-center">
-            <button type="submit" class="btn btn mr-4 mt-5" routerLink='/entrar'>Cancelar</button>
-            <button type="submit" class="btn btn mt-5" (click)='cadastrar()'>Cadastrar</button>
+        <div class="d-flex justify-content-center mt-4">
+            <button type="submit" class="btn btn mr-4" routerLink='/entrar'>Cancelar</button>
+            <button type="submit" class="btn btn" (click)='cadastrar()'>Cadastrar</button>
         </div>
     </div>
 </div>

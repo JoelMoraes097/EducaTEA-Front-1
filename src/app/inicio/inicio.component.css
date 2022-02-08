@@ -6,8 +6,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
-
+}
   .btn {
     box-shadow: none;
     width: 30%;
@@ -17,61 +16,43 @@
     border-radius: 25px;
     letter-spacing: 1.3px
 }
-
 .btn:hover {
-    background-color: #6E00C8
-}
-
-
-    
+    background-color: #ad57f3
+}   
 #nav-todasPostagens-tab {
     background-color: #ad57f3;
 }
-
 #nav-todasPostagens-tab:hover {
     background-color: #7ff070
 }
-
 #nav-minhasPostagens-tab {
     background-color: #ad57f3;
 }
-
 #nav-minhasPostagens-tab:hover {
     background-color: #7ff070
 }
-
-
 #nav-postagemTema-tab {
     background-color: #ad57f3;
 }
-
 #nav-postagemTema-tab:hover {
     background-color: #7ff070
 }
 .back-color{
     background-color: #ad57f3;
 }
-.margin{
+.bg{
     width: 100%;
     height: 70vh;
-    
     background-image:url('../../assets/img/inicio.svg');
     background-size: cover;
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat;   
 }
 .botao{
     position: absolute;
     left: 50px;
     bottom: 40px;
 }
-.margin img{
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    padding: 2rem;
-}
-.margin a{
+.bg a{
     position: relative;
     z-index: 2;
     margin: 0 auto;
