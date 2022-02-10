@@ -438,3 +438,7 @@ body{
 .tm-nav{
     padding-left: 80px;
 }
+
+.margin-tm{
+    margin:15px;
+}
